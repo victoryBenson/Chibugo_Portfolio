@@ -12,6 +12,7 @@ import {BsArrowRightCircle} from 'react-icons/bs'
 
 export const Navbar = () => {
     const [mobile, setMobile] = useState(false)
+    const [isActive, setIsActive] = useState(false)
 
     const handleMobile = () =>{
         setMobile(!mobile)
@@ -21,15 +22,40 @@ export const Navbar = () => {
         const body = document.querySelector('body');
         body.style.overflow = mobile? 'hidden' : 'auto';
     }, [mobile])
+
+    const scrollToTop = () => {
+        window.scrollTo(
+            {
+                top: 0,
+                behavior: 'smooth'
+            }
+        )
+    }
+
+    useEffect(()=> {
+        window.addEventListener('scroll', () => {
+        window.scrollY > 60 ? setIsActive(true) : setIsActive(false)
+        })
+      })
+
+
  
     
   return (
-    <div className='z-40 fixed top-0 w-full '>
-        <div className='flex justify-between items-center h-20 bg-[#f0d6e8] shadow-lg px-2'>
-             <div className=' relative'>
-                <p className=' font-bold lg:text-3xl text-2xl text-[#314198] text-center'>Chibugo Cynthia A.</p>
+    <div className= {`${isActive && 'fixed inset-0  top-0 transition-all duration-200 backdrop-blur w-[100%] m-0 p-0 flex z-[999] bg-[#f0d6e8] '} bg-[#f0d6e8] z-[999] h-20 flex items-center justify-center w-[100%] m-0 p-0 `}>
+        <div className='flex justify-between items-center h-20 px-5 w-full shadow'>
+            <div className='flex items-center'>
+                {
+                    isActive && 
+                        <p  data-aos="zoom-in" className=''>
+                            <img src={`https://i.postimg.cc/L6wGnzTq/Photoroom-20240402-164343.png`} alt="myImage" className=' w-16 h-16 rounded-full object-cover object-top border-1 border-primary/10' />
+                        </p>
+                }
+                <div className=' relative px-2'>
+                    <p className=' font-bold lg:text-3xl text-xl text-[#314198] text-center'>Chibugo Cynthia A.</p>
+                </div>
             </div>
-            <ul className='hidden lg:flex items-center font-bold text-gray-dark'>
+            <ul className='hidden md:flex items-center font-bold text-gray-dark'>
                 <a href='#home' className= "hover:underline decoration-primary decoration-2 underline-offset-4" >
                     <li className='flex items-center px-3 py-2 rounded-lg'>Home</li>
                 </a>
@@ -60,9 +86,9 @@ export const Navbar = () => {
                 {/* dropdown */}
                 {
                     mobile && (
-                        <div  className='sm:w-2/4 w-3/4 fixed shadow-lg right-0 md-right-0 top-0 h-full z-[999] duration-500 transition-all'>
-                            <div onClick={handleMobile} className='bg-[#1f2937]/70  fixed top-0 left-0 right-0 h-full w-full duration-500 transition-all'></div>
-                            <div className='relative bg-white h-full overflow-y-scroll'>
+                        <div  className='sm:w-2/4 w-3/4 fixed shadow-lg h-screen right-0 md-right-0 top-0 z-[999] duration-500 transition-al'>
+                            <div onClick={handleMobile} className='bg-[#000000]/30  fixed top-0 inset-0 h-screen w-full duration-300 transition-all'></div>
+                            <div className='relative bg-whit h-full overflow-y-scroll bg-white'>
                                 <div onClick={handleMobile} className='flex p-5 justify-center items-center duration-700 transition-all'>
                                     <BsArrowRightCircle size={30} className='animate-pulse text-gray'/>
                                 </div>
