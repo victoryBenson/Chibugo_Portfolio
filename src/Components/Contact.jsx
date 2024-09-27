@@ -19,17 +19,17 @@ export const Contact = () => {
                 {/* <!-- right --> */}
                 <div class=" md:w-full ">
                     <div class="p-">
-                        <ul class="capitalize py-5">
-                            <li class="text-lg font-bold uppercase">-let's connect</li>
-                            <li class="font-extrabold text-4xl py-2 text-primary">get in touch</li>
+                        <ul class="capitalize ">
+                            <li class="text-base md:text-lg font-bold uppercase">-let's connect</li>
+                            <li class="font-extrabold md:text-4xl text-xl py-2 text-primary">get in touch</li>
                         </ul>
                         <p class="py-2 tracking-wide">I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want to run past me. You can contact anytime at 24/7</p>
                         <div className='p-3'>
                             <p className="flex text-primary">
-                                <a href="https://www.facebook.com/cynthiachibugoayoka" target='_blank'><FaFacebookF size={30} className="text-[#314198] hover:scale-110 duration-200 ease-in cursor-pointer"/></a>
-                                <a href="https://linkedin.com/in/cynthia-chibugo-88092b139" target='_blank'><FaLinkedinIn size={30} className="mx-3 text-[#314198] hover:scale-110 duration-200 ease-in cursor-pointer"/></a>
-                                <a href="mailto:cynthiaayoka23@gmail.com" target='_blank'><SiGmail size={30} className="mx-3 hover:scale-110 duration-200 ease-in cursor-pointer"/></a>
-                                <a href="http://wa.me/+2347034798736" target='_blank'><FaWhatsapp size={30} className="text-[#319852] mx-3 hover:scale-110 duration-200 ease-in cursor-pointer"/></a>
+                                <a href="https://www.facebook.com/cynthiachibugoayoka" target='_blank'><FaFacebookF size={20} className="text-[#314198] hover:scale-110 duration-200 ease-in cursor-pointer"/></a>
+                                <a href="https://linkedin.com/in/cynthia-chibugo-88092b139" target='_blank'><FaLinkedinIn size={20} className="mx-3 text-[#314198] hover:scale-110 duration-200 ease-in cursor-pointer"/></a>
+                                <a href="mailto:cynthiaayoka23@gmail.com" target='_blank'><SiGmail size={20} className="mx-3 hover:scale-110 duration-200 ease-in cursor-pointer"/></a>
+                                <a href="http://wa.me/+2347034798736" target='_blank'><FaWhatsapp size={20} className="text-[#319852] mx-3 hover:scale-110 duration-200 ease-in cursor-pointer"/></a>
                             </p>
                         </div>
                     </div>

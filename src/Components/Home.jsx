@@ -23,7 +23,7 @@ export const Home = () => {
                 <p id='wecome' className='md:py-5 py-2 flex items-center gap-2 '>
                     <span className='text-base hidden md:flex'>Hi there!</span>
                     <span className='text-base'>I'm <span className='text-primary text-xl font-extrabold'>Cynthia - </span></span>
-                    <h1 className="flex flex-wrap lg:text-xl md:text-lg text-xl font-bold text-primary">
+                    <h1 className="flex flex-wrap lg:text-xl md:text-lg text-base font-bold text-primary">
                         <TypeAnimation 
                             sequence={[
                                 'Financial Accountant',
@@ -45,18 +45,11 @@ export const Home = () => {
                     </h1>
                 </p>
                 <div className='text-base'> 
-                    <p className='font-semibold text-2xl py-1'>I am a detail-oriented and results-driven Accountant with over 6-years of experience in bookkeeping, financial reporting, and tax preparation.</p> 
+                    <p className='font-semibold text-xl md:text-2xl py-1'>I am a detail-oriented and results-driven Accountant with over 6 years of experience in bookkeeping, financial reporting, and tax preparation.</p> 
                     Proficient in using QuickBooks, managing accounts payable and receivable, and performing payroll processing. 
                     Seeking to leverage my skills and expertise in a dynamic organization to drive financial efficiency and compliance.
                 </div>
-                <div className='flex flex-wrap gap-4 py-3 md:my-4 font-bold'>
-                    <span className='hidden'>
-                        <a href="#services" 
-                            className='p-3 my-3 bg-primary flex text-white rounded-lg transition-all justify-center items-center hover:scale-105 duration-200 ease-in-out'>
-                            Learn more 
-                            <LiaExternalLinkAltSolid size={20}/>
-                        </a>
-                    </span>
+                <div className='flex flex-wrap gap-4 py-3 md:my-4 font-bold justify-center'>
                     <span>
                         <a href='https://docs.google.com/document/d/1dT-5kSd-0hqQBSQJcHj4C9OKruoUKl3D/edit?usp=sharing&ouid=106498312753727848708&rtpof=true&sd=true' target='_blank' 
                             className='flex border p-3 px-5 my-3 text-white bg-primary transition-all rounded-lg justify-center items-center hover:scale-105 duration-200 ease-in-out '>
@@ -67,7 +60,7 @@ export const Home = () => {
                 </div>
             </div>
             {/* right-side(image) */}
-            <div className='flex justify-center items-center m-2 md:w-[50%]'>
+            <div className='flex justify-center items-center m-2 md:w-[50%] md:order-2'>
                 <p className='w-[80%] h-[90%] '>
                     <img src={`https://i.postimg.cc/L6wGnzTq/Photoroom-20240402-164343.png`} alt="myImage" className='w-full h-full rounded-lg object-cover object-top ' />
                 </p>

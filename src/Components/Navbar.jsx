@@ -52,7 +52,7 @@ export const Navbar = () => {
                         </p>
                 }
                 <div className=' relative px-2'>
-                    <p className=' font-bold  text-xl text-primary text-center'>Chibugo Cynthia A.</p>
+                    <p className=' font-bold  text-lg text-primary text-center'>Chibugo Cynthia A.</p>
                 </div>
             </div>
             <ul className='hidden md:flex items-center font-bold text-gray-dark'>
@@ -82,7 +82,7 @@ export const Navbar = () => {
             </div>
             {/* mobile view btn */}
             <div className='flex lg:hidden'>
-                <p><CiMenuFries onClick={handleMobile} className=' text-primary-content duration-700 transition-all' size={30}/></p>
+                <p><CiMenuFries onClick={handleMobile} className=' text-primary-content duration-700 transition-all' size={20}/></p>
                 {/* dropdown */}
                 {
                     mobile && (

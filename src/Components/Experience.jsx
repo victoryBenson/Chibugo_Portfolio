@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const data = [
     {
-        year : `2020 - 2023`,
+        year : `2020 - 2024`,
         company: "Kaima Intergrated Network ventures(Nestle Distribution Company)",
         position: "Financial Accountant" ,
         job: "Job Description",
@@ -40,9 +40,9 @@ export const Experience = () => {
       },[])
   return (
     <div data-aos ="fade-up" id='experience' className='sm:mx-10 p-4'>
-        <ul class="capitalize py-2">
-            <li class="text-lg font-bold uppercase pl-5"> -know me more!</li>
-            <li class="font-extrabold md:text-4xl text-3xl py-2 text-primary">my Working experience</li>
+        <ul class="capitalize px-5">
+            <li class="text-base md:text-lg font-bold uppercase pl-5"> -know me more!</li>
+            <li class="font-extrabold md:text-4xl text-xl py-2 text-primary">my Working experience</li>
         </ul>
         {
             data.map((item,id)=>(

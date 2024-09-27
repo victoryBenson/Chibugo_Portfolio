@@ -29,7 +29,7 @@ export const About = () => {
                     <video src={introVideo} className=' h-full lg:w-1/2 w-full bg-white' controls/>
                 </div>
             </div>
-            <div class="p-1 m-1 hidden">
+            {/* <div class="p-1 m-1 hidden">
                 <div className=''>
                     <p class="p-2 tracking-wide items-center"> Hello there! My name is <a href="#about" class=" font-bold capitalize">Ayoka Cynthia Chibugo</a>. I am a Financial Accountant & Data Analyst, and I'm very passionate and dedicated to my work.</p>
                     <p class="p-2 tracking-wide">With over 10years experience as an Accountant and Data Analyst, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of Accounting.</p>
@@ -43,7 +43,7 @@ export const About = () => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
             {/* <!-- check out --> */}
             <div class="justify-center min-h-max  items-center m-auto hidden">
                 <div class="mx-auto p-1 w-full">

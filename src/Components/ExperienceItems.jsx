@@ -8,10 +8,10 @@ export const ExperienceItems = ({exp}) => {
                 <div>
                     <ul className='flex flex-wrap justify-between items-center'>
                         <li className='bg-primary p-2 rounded font-bold text-white shadow-lg '>{exp.year}</li>
-                        <li className='text-gray-dark font-bold text-lg p-2 capitalize'>{exp.company}</li>
+                        <li className='text-gray-dark font-bold text-base md:text-lg py-2 capitalize'>{exp.company}</li>
                     </ul>
-                    <p className='font-bold text-xl p-4 capitalize'>{exp.position}</p>
-                    <p className='p-2 text-stone-700 font-bold'>{exp.job}</p>
+                    <p className='font-bold text-base md:text-lg py-2 capitalize'>Position: {exp.position}</p>
+                    <p className='text-stone-700 font-bold'>{exp.job}</p>
                     <ul className='list-disc pl-10'>
                         <li className='p-2'>{exp.role1}</li>
                         <li className='p-2'>{exp.role2}</li>
