@@ -23,9 +23,9 @@ export const Services = () => {
   },[])
 
   return (
-    <div data-aos="fade-up" data- id='services' className='sm:mx-10 p-4 sm:py-16 '>
+    <div data-aos="fade-up" data- id='services' className='sm:mx-10 p-4 sm:py-5'>
         <ul class="capitalize p-5">
-            <li class="text-base md:text-lg font-bold uppercase ">-services</li>
+            <li class="text-base md:text-lg font-bold uppercase">-services</li>
             <li class="font-extrabold md:text-4xl text-xl py-2 text-primary">my specializations</li>
         </ul>
         <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>

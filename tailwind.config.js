@@ -51,6 +51,9 @@ export default {
       'black': '#1f2937',
       'blue': '#314198'
     },
+    fontFamily:{
+      poppins: ["Poppins", "sans-serif"],
+    },
   }
   //...
   // plugins: [require("daisyui")],

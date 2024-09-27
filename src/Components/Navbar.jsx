@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {AiOutlineHome} from 'react-icons/ai'
-import { MdConnectWithoutContact}  from 'react-icons/md'
+import { MdClose, MdConnectWithoutContact}  from 'react-icons/md'
 import {CiMenuFries} from 'react-icons/ci'
 import {FaFacebookF, FaLinkedinIn,FaWhatsapp,FaLaptopCode} from 'react-icons/fa'
 import {TfiVideoClapper} from 'react-icons/tfi'
@@ -86,13 +86,14 @@ export const Navbar = () => {
                 {/* dropdown */}
                 {
                     mobile && (
-                        <div  className='sm:w-2/4 w-3/4 fixed shadow-lg h-screen right-0 md-right-0 top-0 z-[999] duration-500 transition-al'>
-                            <div onClick={handleMobile} className='bg-[#000000]/30  fixed top-0 inset-0 h-screen w-full duration-300 transition-all'></div>
+                        <div  className='fixed shadow-lg h-screen inset-0 z-[999] duration-500 transition-all'>
+                            {/* <div onClick={handleMobile} className='bg-[#000000]/30  fixed top-0 inset-0 h-screen w-full duration-300 transition-all'></div> */}
                             <div className='relative bg-whit h-full overflow-y-scroll bg-white'>
-                                <div onClick={handleMobile} className='flex p-5 justify-center items-center duration-700 transition-all'>
-                                    <BsArrowRightCircle size={30} className='animate-pulse text-gray'/>
+                                <div onClick={handleMobile} className='flex p-5 justify-end items-center duration-700 transition-all'>
+                                    {/* <BsArrowRightCircle size={30} className='animate-pulse text-gray'/> */}
+                                    <MdClose size={30}/>
                                 </div>
-                                <div className='relative flex flex-col items-center justify-center font-bold text-gray-dark'>
+                                <div className='relative flex flex-col items-center justify-center font-bold text-gray-dark text-lg'>
                                     <a 
                                         href="#home"
                                         className='capitalize flex items-center py-3 hover:underline decoration-primary decoration-2 underline-offset-4'
