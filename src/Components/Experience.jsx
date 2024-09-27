@@ -39,7 +39,7 @@ export const Experience = () => {
         })    
       },[])
   return (
-    <div data-aos ="fade-up" id='experience' className='sm:mx-10 p-4 py-20'>
+    <div data-aos ="fade-up" id='experience' className='sm:mx-10 p-4'>
         <ul class="capitalize py-2">
             <li class="text-lg font-bold uppercase pl-5"> -know me more!</li>
             <li class="font-extrabold md:text-4xl text-3xl py-2 text-primary">my Working experience</li>

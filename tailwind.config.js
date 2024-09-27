@@ -40,10 +40,10 @@ export default {
   // },
   theme: {
     colors: {
-      'primary': '#E44E5F',
+      'primary': '#0000FF',
       'primary-focus': '#632C3B',
       'primary-content': '#2D1A1C',
-      'secondary': '#E7E5E4',
+      'secondary': '#808080',
       'white': '#ffffff',
       'gray-dark': '#273444',
       'gray': '#8492a6',

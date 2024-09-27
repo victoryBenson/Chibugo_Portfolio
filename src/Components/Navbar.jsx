@@ -42,8 +42,8 @@ export const Navbar = () => {
  
     
   return (
-    <div className= {`${isActive && 'fixed inset-0  top-0 transition-all duration-200 backdrop-blur w-[100%] m-0 p-0 flex z-[999] bg-[#f0d6e8] '} bg-[#f0d6e8] z-[999] h-20 flex items-center justify-center w-[100%] m-0 p-0 `}>
-        <div className='flex justify-between items-center h-20 px-5 w-full shadow'>
+    <div className= {`${isActive && 'fixed inset-0 top-0 transition-all duration-200 w-[100%] m-0 p-0 flex z-[999] my-0 md:my-1'} my-5 md:px-14 px-2 z-[999] h-20 flex items-center justify-center w-[100%] m-0 p-0`}>
+        <div className='flex justify-between items-center h-20 px-5 w-full rounded-full shadow bg-white py-10'>
             <div className='flex items-center'>
                 {
                     isActive && 
@@ -52,7 +52,7 @@ export const Navbar = () => {
                         </p>
                 }
                 <div className=' relative px-2'>
-                    <p className=' font-bold lg:text-3xl text-xl text-[#314198] text-center'>Chibugo Cynthia A.</p>
+                    <p className=' font-bold  text-xl text-primary text-center'>Chibugo Cynthia A.</p>
                 </div>
             </div>
             <ul className='hidden md:flex items-center font-bold text-gray-dark'>
